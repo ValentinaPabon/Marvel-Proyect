@@ -8,7 +8,7 @@ export default function Comics() {
   const [renderComics, setRenderComics] = useState(10);
 
   const listComics = useFetch(
-    `http://gateway.marvel.com/v1/public/series?ts=1&apikey=453e4ced1c12993187c62032ccc1a6f3&hash=31b1157d999ab089756abf297ddf97d3&orderBy=startYear&limit=20`
+    `http://gateway.marvel.com/v1/public/comics?ts=1&apikey=453e4ced1c12993187c62032ccc1a6f3&hash=31b1157d999ab089756abf297ddf97d3&orderBy=startYear&limit=20`
   );
 
   return (
